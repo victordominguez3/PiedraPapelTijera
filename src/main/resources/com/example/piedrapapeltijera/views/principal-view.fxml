@@ -13,7 +13,6 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
 <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="325.0" prefWidth="510.0" style="-fx-background-color: #E2FFF9;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane prefHeight="324.0" prefWidth="107.0">
@@ -29,32 +28,32 @@
             <RowConstraints minHeight="10.0" prefHeight="15.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="botonPiedra" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onMouseEntered="#onRatonEnPiedra" onMouseExited="#onRatonFueraPiedra" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;">
+            <Button fx:id="botonPiedra" contentDisplay="GRAPHIC_ONLY" mnemonicParsing="false" onAction="#onBotonPiedraClick" onMouseEntered="#onRatonEnPiedra" onMouseExited="#onRatonFueraPiedra" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonPapel" mnemonicParsing="false" onMouseEntered="#onRatonEnPapel" onMouseExited="#onRatonFueraPapel" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="1">
+            <Button fx:id="botonPapel" mnemonicParsing="false" onAction="#onBotonPapelClick" onMouseEntered="#onRatonEnPapel" onMouseExited="#onRatonFueraPapel" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="1">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonTijera" mnemonicParsing="false" onMouseEntered="#onRatonEnTijera" onMouseExited="#onRatonFueraTijera" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="2">
+            <Button fx:id="botonTijera" mnemonicParsing="false" onAction="#onBotonTijeraClick" onMouseEntered="#onRatonEnTijera" onMouseExited="#onRatonFueraTijera" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="2">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonLagarto" mnemonicParsing="false" onMouseEntered="#onRatonEnLagarto" onMouseExited="#onRatonFueraLagarto" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="3">
+            <Button fx:id="botonLagarto" mnemonicParsing="false" onAction="#onBotonLagartoClick" onMouseEntered="#onRatonEnLagarto" onMouseExited="#onRatonFueraLagarto" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="3">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonSpock" mnemonicParsing="false" onMouseEntered="#onRatonEnSpock" onMouseExited="#onRatonFueraSpock" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="4">
+            <Button fx:id="botonSpock" mnemonicParsing="false" onAction="#onBotonSpockClick" onMouseEntered="#onRatonEnSpock" onMouseExited="#onRatonFueraSpock" prefHeight="45.0" prefWidth="45.0" style="-fx-background-color: #E2FFF9;" GridPane.rowIndex="4">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
-            <Button fx:id="botonReglas" mnemonicParsing="false" text="REGLAS" GridPane.rowIndex="5">
+            <Button fx:id="botonReglas" mnemonicParsing="false" onAction="#onBotonReglasClick" text="REGLAS" GridPane.rowIndex="5">
                <font>
                   <Font name="Century Gothic" size="15.0" />
                </font>
@@ -104,7 +103,7 @@
                   <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                </VBox.margin>
             </GridPane>
-            <TextField alignment="CENTER" prefHeight="54.0" prefWidth="400.0">
+            <TextField fx:id="textoFinal" alignment="CENTER" editable="false" prefHeight="54.0" prefWidth="400.0">
                <VBox.margin>
                   <Insets bottom="20.0" left="50.0" right="50.0" />
                </VBox.margin>
