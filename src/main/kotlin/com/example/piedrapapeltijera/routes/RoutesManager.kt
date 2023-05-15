@@ -22,7 +22,7 @@ object RoutesManager {
         val fxmlLoader = FXMLLoader(PiedraPapelTijeraApplication::class.java.getResource("views/principal-view.fxml"))
         val controlador = PiedraPapelTijeraController()
         fxmlLoader.setController(controlador)
-        val scene = Scene(fxmlLoader.load(), 510.0, 325.0)
+        val scene = Scene(fxmlLoader.load(), 510.0, 355.0)
         stage.title = "Piedra Papel Tijeras Lagarto Spock"
         stage.scene = scene
         stage.isResizable = false
@@ -36,7 +36,7 @@ object RoutesManager {
         val fxmlLoader = FXMLLoader(PiedraPapelTijeraApplication::class.java.getResource("views/reglas-view.fxml"))
         val scene = Scene(fxmlLoader.load())
         val stage = Stage()
-        stage.title = "Reglas"
+        stage.title = "Reglas del juego"
         stage.scene = scene
         stage.isResizable = false
         stage.initOwner(mainStage)
